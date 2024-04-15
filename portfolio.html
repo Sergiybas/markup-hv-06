@@ -23,28 +23,37 @@
   <body>
     <header class="header">
       <div class="header">
-        <div class="fon-header margin-header">
-          <nav class="nav-flex">
-            <a class="logo" href="./index.html">Web<span class="header-studio">Studio</span></a>
-
-            <ul class="nav">
-              <li><a class="nav-list" href="./index.html">studio</a></li>
-              <li><a class="nav-list line-bottom" href="./portfolio.html">portfolio</a></li>
-              <li><a class="nav-list" href="">contacts</a></li>
-            </ul>
-          </nav>
-          <address>
-            <ul class="address">
-              <li class="address-list">
-                <a class="mail" href="malito:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li class="address-list">
-                <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
-              </li>
-            </ul>
-          </address>
+        <div class="container">
+          <div class="header-wrapper">
+            <nav class="nav-flex">
+              <a class="logo" href="./index.html">Web<span class="header-studio">Studio</span></a>
+      
+              <ul class="nav">
+                <li class="studio-block">
+                  <a class="nav-list line-bottom" href="./index.html">studio</a>
+                </li>
+                <li><a class="nav-list" href="./portfolio.html">portfolio</a></li>
+                <li><a class="nav-list" href="">contacts</a></li>
+              </ul>
+            </nav>
+            <address class="address-block">
+              <ul class="address">
+                <li class="address-list">
+                  <a class="mail" href="malito:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="address-list">
+                  <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+              </ul>
+            </address>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-menu"></use>
+      
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
     </header>
     <main>
       <!-- ///////Button-Portfolio//////////// -->
@@ -63,7 +72,7 @@
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/bankapp.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/bankapp.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -71,14 +80,16 @@
                   </p>
                 </div>
               </div>
-              <h2>Banking App Interface Concept</h2>
-              <p>App</p></a
+              <div class="description">
+                <h2>Banking App Interface Concept</h2>
+              <p>App</p>
+              </div></a
             >
           </li>
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/quarcode.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/quarcode.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -93,7 +104,7 @@
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/notebookfone.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/notebookfone.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -108,7 +119,7 @@
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/avto.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/avto.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -123,7 +134,7 @@
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/smartfone.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/smartfone.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -138,7 +149,7 @@
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/orang.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/orang.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -153,7 +164,7 @@
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/instagram.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/instagram.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -168,7 +179,7 @@
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/food.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/food.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -183,7 +194,7 @@
           <li class="label-items">
             <a class="label-img" href=""
               ><div class="label-block">
-                <img src="./images/kofe.jpg" alt="Cashless Payment" width="360" />
+                <img src="./images/kofe.jpg" alt="Cashless Payment" width="359" />
                 <div class="label-fone">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -251,5 +262,59 @@
         </div>
       </div>
     </footer>
+    <!-- /////////////////menu//////////////// -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-svg">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile-link">Studio</a></li>
+        <li><a href="./portfolio.html" class="mobile-link">Portfolio</a></li>
+        <li><a href="" class="mobile-link">Contacts</a></li>
+      </ul>
+      <ul class="menu-address">
+        <li class="menu-address-list">
+          <a class="menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="menu-address-list">
+          <a class="menu-mail" href="malito:info@devstudio.com">info@devstudio.com</a>
+        </li>
+    
+      </ul>
+      <ul class="menu-social-block">
+        <li class="menu-social-link">
+          <a class="menu-social-href" href="">
+            <svg class="menu-social-svg">
+              <use href="./images/symbol-defs.svg#icon-instagram" width="16" height="16"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-link">
+          <a class="menu-social-href" href="">
+            <svg class="menu-social-svg">
+              <use href="./images/symbol-defs.svg#icon-twitter" width="16" height="16"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-link">
+          <a class="menu-social-href" href="">
+            <svg class="menu-social-svg">
+              class="menu-social-svg" <use href="./images/symbol-defs.svg#icon-facebook" width="16" height="16"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-link">
+          <a class="menu-social-href" href="">
+            <svg class="menu-social-svg">
+              <use href="./images/symbol-defs.svg#icon-linkedin" width="16" height="16"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobil-menu.js"></script>
   </body>
 </html>
