@@ -931,8 +931,6 @@ textarea {
     color: #FFF;
 }
 
-
-
 .subscribe input {
     width: 398px;
     height: 40px;
@@ -954,8 +952,6 @@ textarea {
     display: flex;
     align-items: center;
     gap: 16px;
-
-
 }
 
 .button-subscribe {
@@ -1042,15 +1038,12 @@ textarea {
 /////////////////////////portfolio//////////////////////
 /////////////////////////////////////////////////////// */
 
-/* .button-block{
-    width: 586px;
-        height: 48px;
-} */
-/* ////////////BUTTON-Portfolio/////////////////// */
 
+/* ////////////BUTTON-Portfolio/////////////////// */
+/* 
 .margin-header {
     margin-bottom: 80px;
-}
+} */
 
 .btn {
     display: flex;
@@ -1060,6 +1053,7 @@ textarea {
 .button-block {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 72px;
 
@@ -1121,21 +1115,14 @@ textarea {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 48px 24px;
-
+    gap: 48px ;
     margin-bottom: 120px;
-
     text-align: center;
 }
 
-.label-items {}
-
 .label-img {
-
     text-decoration: none;
-    /* border: 1px solid #E7E9FC; */
-
-}
+   }
 
 .description {
     text-align: left;
@@ -1172,34 +1159,26 @@ textarea {
 }
 
 .label-block {
-
     position: relative;
     overflow: hidden;
     width: 360px;
     height: 300px;
-
-
 }
 
 .label-img:hover .label-fone,
 .label-img:focus .label-fone {
-    /* opacity: 1; */
-    /* transform: scaleY(1); */
+    
     transform: translateY(0);
-
-
 }
 
 .label-fone {
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
     background-color: var(--ocean);
-    /* transform: scaleY(0); */
+    
     transform: translateY(100%);
     transform-origin: bottom;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1212,7 +1191,6 @@ textarea {
     right: 32px;
 
     font-family: var(--font-family);
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -1220,7 +1198,13 @@ textarea {
     letter-spacing: 0.32px;
 
 }
-
+@media screen and (min-width:768px){
+    .label{
+        gap:0px ;
+        justify-content: space-between;
+    }
+   
+}
 /* //////////////menu/////////// */
 .menu-container {
     position: fixed;
@@ -1274,7 +1258,6 @@ textarea {
 }
 
 .mobile-menu {
-
     display: flex;
     flex-direction: column;
     padding-top: 80px;
