@@ -19,8 +19,6 @@ html {
 
 }
 
-
-
 body {
     font-family: var(--font-family);
     color: var(--navy-blue);
@@ -144,7 +142,6 @@ ul {
 @media screen and (min-width:768px) {
     .nav {
         display: flex;
-
     }
 }
 
@@ -177,7 +174,6 @@ ul {
     border-radius: 2px;
     background-color: var(--ocean);
     bottom: -1px;
-
 }
 
 .mail {
@@ -232,7 +228,7 @@ ul {
 .hero-title {
     margin-bottom: 48px;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 107%;
     letter-spacing: 0.02em;
     color: var(--white);
@@ -254,6 +250,12 @@ ul {
     background-color: var(--ocean);
 }
 
+@media screen and (min-width:768px) {
+    .hero-title {
+        font-size: 56px;
+    }
+}
+
 /* ////////modal//////////// */
 .backdrop {
     position: fixed;
@@ -271,7 +273,6 @@ ul {
 }
 
 .modal {
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -471,7 +472,6 @@ textarea {
     background-image: url(../images/click.svg);
     background-size: contain;
 
-
 }
 
 .submit {
@@ -502,19 +502,19 @@ textarea {
 }
 
 /* ////////////////.....text.....//////////////////// */
-
-
-@media screen and (min-width:768px) {
-    .text {
-        display: flex;
-        gap: 24px;
-    }
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
 }
 
-.text-block {
 
+
+.text-block {
+    padding: 15px;
     margin-bottom: 120px;
-    width: 396px;
+    width: 100%;
 }
 
 .text .list {
@@ -554,6 +554,8 @@ textarea {
 
     .text {
         flex-wrap: wrap;
+        flex-direction: row;
+        gap: 24px;
     }
 
     .text-block .list {
@@ -568,6 +570,12 @@ textarea {
 
     .text-block .list {
         text-align: left;
+    }
+
+    .text {
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 120px;
     }
 }
 
@@ -612,20 +620,26 @@ textarea {
 
 
 /* /////////////Personal///////////////////// */
-.fon {
+/* .fon {
     display: flex;
     justify-content: center;
 
-}
+} */
 
 .team {
     text-align: center;
     background: var(--cloud);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 96px 0px;
+    margin-bottom: 96px;
 }
 
 .team-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     gap: 72px;
     padding: 0;
 
@@ -680,14 +694,10 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 .team-list>img {
     margin-bottom: 32px;
-
 }
 
 .team-img {
@@ -707,11 +717,8 @@ textarea {
 }
 
 .social-link {
-
-
     width: 40px;
     height: 40px;
-
 }
 
 .social-href {
@@ -812,18 +819,20 @@ textarea {
 }
 
 /* //////////////footer//////////////// */
-
 .footer {
+    max-width: 1440px;
+    margin: auto;
+}
 
+.footer-block {
+    width: 100%;
+    padding: 96px 0px;
     background: var(--navy-blue);
-    padding: 100px;
     max-width: 1440px;
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 
 .footer-text {
     font-family: var(--font-family);
@@ -874,11 +883,8 @@ textarea {
 
 .footer-social-block {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 16px;
-
-
 
 }
 
@@ -925,14 +931,13 @@ textarea {
 
 .subscribe label {
     display: flex;
-
-
     margin-bottom: 16px;
+
     color: #FFF;
 }
 
 .subscribe input {
-    width: 398px;
+    width: 300px;
     height: 40px;
     border-radius: 4px;
     background-color: var(--navy-blue);
@@ -943,7 +948,6 @@ textarea {
     font-style: normal;
     font-weight: 400;
     line-height: 200%;
-
     letter-spacing: 0.48px;
 }
 
@@ -954,14 +958,11 @@ textarea {
     gap: 16px;
 }
 
-.button-subscribe {
-    width: 90%px;
-    height: 40px;
-}
+.button-subscribe {}
 
 .button-subscribe button {
-    padding: 6px;
-    padding-right: 60px;
+    padding: 6px 56.5px 7px 26.5px;
+
     border-radius: 4px;
     background-color: var(--iris);
     font-size: 16px;
@@ -985,6 +986,7 @@ textarea {
     .footer-block {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .logo-text {
@@ -999,6 +1001,7 @@ textarea {
     .footer-form {
         flex-direction: row;
         align-items: flex-end;
+        margin: 0px 130px;
     }
 
     .subscribe {
@@ -1021,7 +1024,7 @@ textarea {
     }
 
     .logo-text {
-        margin-bottom: 0px;
+        margin-bottom: 72px;
     }
 
     .footer-social {
@@ -1030,7 +1033,7 @@ textarea {
     }
 
     .footer-form {
-        margin-left: 80px;
+        margin: 0px 0px 0px 80px;
     }
 }
 
@@ -1115,14 +1118,14 @@ textarea {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 48px ;
+    gap: 48px;
     margin-bottom: 120px;
     text-align: center;
 }
 
 .label-img {
     text-decoration: none;
-   }
+}
 
 .description {
     text-align: left;
@@ -1167,7 +1170,7 @@ textarea {
 
 .label-img:hover .label-fone,
 .label-img:focus .label-fone {
-    
+
     transform: translateY(0);
 }
 
@@ -1178,7 +1181,7 @@ textarea {
     width: 100%;
     height: 100%;
     background-color: var(--ocean);
-    
+
     transform: translateY(100%);
     transform-origin: bottom;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1198,13 +1201,15 @@ textarea {
     letter-spacing: 0.32px;
 
 }
-@media screen and (min-width:768px){
-    .label{
-        gap:0px ;
+
+@media screen and (min-width:768px) {
+    .label {
+        gap: 0px;
         justify-content: space-between;
     }
-   
+
 }
+
 /* //////////////menu/////////// */
 .menu-container {
     position: fixed;
@@ -1251,7 +1256,7 @@ textarea {
     outline: none;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
@@ -1265,10 +1270,12 @@ textarea {
     margin-bottom: 284px;
     gap: 40px;
 }
-.menu-svg{
+
+.menu-svg {
     width: 16px;
     height: 16px;
 }
+
 .mobile-link {
     font-size: 36px;
     font-style: normal;
@@ -1287,7 +1294,7 @@ textarea {
 .menu-address {
     display: flex;
     flex-direction: column;
-    gap:40px;
+    gap: 40px;
 
     padding-left: 40px;
     margin-bottom: 48px;
@@ -1345,7 +1352,8 @@ textarea {
     width: 16px;
     height: 16px;
 }
+
 .menu-social-link:hover,
-.menu-social-link:focus .menu-social-svg{
+.menu-social-link:focus .menu-social-svg {
     background-color: var(--green);
 }
